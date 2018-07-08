@@ -1,5 +1,5 @@
 {
-  "name": "ng6-app",
+  "name": "jhi-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "node ./node_modules/@angular/cli/bin/ng",

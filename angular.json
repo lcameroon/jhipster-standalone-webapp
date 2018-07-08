@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng6-app": {
+    "jhi-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "showCircularDependencies": false,
-            "outputPath": "dist/ng6-app",
+            "outputPath": "dist/www",
             "index": "src/index.html",
             "main": "src/app/app.main.ts",
             "polyfills": "src/app/polyfills.ts",
@@ -55,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng6-app:build"
+            "browserTarget": "jhi-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng6-app:build:production"
+              "browserTarget": "jhi-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng6-app:build"
+            "browserTarget": "jhi-app:build"
           }
         },
         "test": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "ng6-app-e2e": {
+    "jhi-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -108,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng6-app:serve"
+            "devServerTarget": "jhi-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng6-app:serve:production"
+              "devServerTarget": "jhi-app:serve:production"
             }
           }
         },
@@ -128,5 +128,5 @@
       }
     }
   },
-  "defaultProject": "ng6-app"
+  "defaultProject": "jhi-app"
 }
