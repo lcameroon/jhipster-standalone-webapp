@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
-            <h2 id="app-label-heading" jhiTranslate="jhipsterSampleApplicationApp.label.home.createOrEditLabel">Create or edit a Label</h2>
+            <h2 id="app-label-heading" jhiTranslate="label.home.createOrEditLabel">Create or edit a Label</h2>
             <div>
                 <app-alert-error></app-alert-error>
                 <div class="form-group" [hidden]="!label.id">
@@ -10,7 +10,7 @@
                         [(ngModel)]="label.id" readonly />
                 </div>
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="jhipsterSampleApplicationApp.label.label" for="field_label">Label</label>
+                    <label class="form-control-label" jhiTranslate="label.label" for="field_label">Label</label>
                     <input type="text" class="form-control" name="label" id="field_label"
                         [(ngModel)]="label.label" required minlength="3"/>
                     <div [hidden]="!(editForm.controls.label?.dirty && editForm.controls.label?.invalid)">
