@@ -7,7 +7,7 @@ import {
     CanActivate
 } from '@angular/router';
 import {
-    JhiPaginationUtil,
+    // JhiPaginationUtil,
     JhiResolvePagingParams
 } from '../../../lib/ng-jhipster';
 

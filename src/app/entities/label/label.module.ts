@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { JhipsterSampleApplicationSharedModule } from '../../shared';
+import { JhiSharedModule } from '../../shared';
 import {
     LabelComponent,
     LabelDetailComponent,
@@ -15,10 +15,7 @@ import {
 const ENTITY_STATES = [...labelRoute, ...labelPopupRoute];
 
 @NgModule({
-    imports: [
-        JhipsterSampleApplicationSharedModule,
-        RouterModule.forChild(ENTITY_STATES)
-    ],
+    imports: [JhiSharedModule, RouterModule.forChild(ENTITY_STATES)],
     declarations: [
         LabelComponent,
         LabelDetailComponent,
@@ -34,4 +31,4 @@ const ENTITY_STATES = [...labelRoute, ...labelPopupRoute];
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class JhipsterSampleApplicationLabelModule {}
+export class JhiLabelModule {}

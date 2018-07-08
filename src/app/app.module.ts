@@ -14,12 +14,12 @@ import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { JhipsterSampleApplicationSharedModule } from './shared';
-import { JhipsterSampleApplicationCoreModule } from './core';
-import { JhipsterSampleApplicationAppRoutingModule } from './app-routing.module';
-import { JhipsterSampleApplicationHomeModule } from './home/home.module';
-import { JhipsterSampleApplicationAccountModule } from './account/account.module';
-import { JhipsterSampleApplicationEntityModule } from './entities/entity.module';
+import { JhiSharedModule } from './shared';
+import { JhiCoreModule } from './core';
+import { JhiAppRoutingModule } from './app-routing.module';
+import { JhiHomeModule } from './home/home.module';
+import { JhiAccountModule } from './account/account.module';
+import { JhiEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import {
     JhiMainComponent,
@@ -33,13 +33,13 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        JhipsterSampleApplicationAppRoutingModule,
+        JhiAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
-        JhipsterSampleApplicationSharedModule,
-        JhipsterSampleApplicationCoreModule,
-        JhipsterSampleApplicationHomeModule,
-        JhipsterSampleApplicationAccountModule,
-        JhipsterSampleApplicationEntityModule
+        JhiSharedModule,
+        JhiCoreModule,
+        JhiHomeModule,
+        JhiAccountModule,
+        JhiEntityModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
@@ -78,4 +78,4 @@ import {
     ],
     bootstrap: [JhiMainComponent]
 })
-export class JhipsterSampleApplicationAppModule {}
+export class JhiAppModule {}

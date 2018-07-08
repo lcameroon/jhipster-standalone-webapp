@@ -1,8 +1,8 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { JhipsterSampleApplicationSharedModule } from '../../shared';
-import { JhipsterSampleApplicationAdminModule } from '../../admin/admin.module';
+import { JhiSharedModule } from '../../shared';
+import { JhiAdminModule } from '../../admin/admin.module';
 import {
     BankAccountComponent,
     BankAccountDetailComponent,
@@ -17,8 +17,8 @@ const ENTITY_STATES = [...bankAccountRoute, ...bankAccountPopupRoute];
 
 @NgModule({
     imports: [
-        JhipsterSampleApplicationSharedModule,
-        JhipsterSampleApplicationAdminModule,
+        JhiSharedModule,
+        JhiAdminModule,
         RouterModule.forChild(ENTITY_STATES)
     ],
     declarations: [
@@ -36,4 +36,4 @@ const ENTITY_STATES = [...bankAccountRoute, ...bankAccountPopupRoute];
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class JhipsterSampleApplicationBankAccountModule {}
+export class JhiBankAccountModule {}

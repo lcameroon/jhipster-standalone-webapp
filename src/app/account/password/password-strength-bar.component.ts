@@ -69,14 +69,26 @@ export class PasswordStrengthBarComponent {
             const c = this.getColor(this.measureStrength(password));
             const element = this.elementRef.nativeElement;
             if (element.className) {
-                this.renderer.setElementClass(element, element.className, false);
+                this.renderer.setElementClass(
+                    element,
+                    element.className,
+                    false
+                );
             }
             const lis = element.getElementsByTagName('li');
             for (let i = 0; i < lis.length; i++) {
                 if (i < c.idx) {
-                    this.renderer.setElementStyle(lis[i], 'backgroundColor', c.col);
+                    this.renderer.setElementStyle(
+                        lis[i],
+                        'backgroundColor',
+                        c.col
+                    );
                 } else {
-                    this.renderer.setElementStyle(lis[i], 'backgroundColor', '#DDD');
+                    this.renderer.setElementStyle(
+                        lis[i],
+                        'backgroundColor',
+                        '#DDD'
+                    );
                 }
             }
         }

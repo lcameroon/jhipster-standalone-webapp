@@ -3,25 +3,22 @@ import { NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
 
 import { NgbDateMomentAdapter } from './util/datepicker-adapter';
 import {
-    JhipsterSampleApplicationSharedLibsModule,
-    JhipsterSampleApplicationSharedCommonModule,
+    JhiSharedLibsModule,
+    JhiSharedCommonModule,
     JhiLoginModalComponent,
     HasAnyAuthorityDirective
 } from './';
 
 @NgModule({
-    imports: [
-        JhipsterSampleApplicationSharedLibsModule,
-        JhipsterSampleApplicationSharedCommonModule
-    ],
+    imports: [JhiSharedLibsModule, JhiSharedCommonModule],
     declarations: [JhiLoginModalComponent, HasAnyAuthorityDirective],
     providers: [{ provide: NgbDateAdapter, useClass: NgbDateMomentAdapter }],
     entryComponents: [JhiLoginModalComponent],
     exports: [
-        JhipsterSampleApplicationSharedCommonModule,
+        JhiSharedCommonModule,
         JhiLoginModalComponent,
         HasAnyAuthorityDirective
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class JhipsterSampleApplicationSharedModule {}
+export class JhiSharedModule {}
