@@ -1,4 +1,4 @@
-# jhipsterSampleApplication
+# Standalone Jhipster webapp (jhipsterSampleApplication)
 
 This application was generated using JHipster 5.0.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v5.0.2](https://www.jhipster.tech/documentation-archive/v5.0.2).
 
@@ -6,7 +6,7 @@ This application was generated using JHipster 5.0.2, you can find documentation 
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 
-1.  [Node.js][]: We use Node to run a development web server and build the project.
+1.  [Node.js](https://nodejs.org/en/): We use Node to run a development web server and build the project.
     Depending on your system, you can install Node either from source or as a pre-packaged bundle.
 
 After installing Node, you should be able to run the following command to install development tools.
