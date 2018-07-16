@@ -18,6 +18,11 @@ You will only need to run this command when dependencies change in [package.json
 
 Run `npm start` for a dev server. Navigate to `http://localhost:8001/`. The app will automatically reload if you change any of the source files.
 
+```bash
+# with mock api
+npm run start:mock
+```
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
